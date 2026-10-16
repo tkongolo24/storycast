@@ -4,136 +4,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Discover The Keepers of the Tide, a StoryCast feature about coastal life, memory, and changing shorelines.">
-  <title>The Keepers of the Tide — StoryCast</title>
-  <link rel="stylesheet" href="../css/main.css">
+  <meta name="description" content="Discover thoughtful human stories through StoryCast's editorial audio and accessible storytelling.">
+  <title>StoryCast — Every voice carries a story</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
-      <a class="logo" href="../index.html">StoryCast<span aria-hidden="true">.</span></a>
+      <a class="logo" href="index.html">StoryCast<span aria-hidden="true">.</span></a>
       <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="index.html" aria-current="page">Stories</a>
-        <a href="../about.html">About &amp; Access</a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="story/index.html">Stories</a>
+        <a href="about.html">About &amp; Access</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <article>
-      <header class="section">
-        <div class="container">
-          <p class="eyebrow">People &amp; place · Audio feature</p>
-          <h1>The Keepers of the Tide</h1>
-          <p>
-            Along the coast, the sea is more than a horizon.
-            It is a livelihood, a memory, and a way of understanding time.
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Independent stories · Human perspectives</p>
+          <h1>Every voice carries <em>a story.</em></h1>
+          <p class="hero__description">
+            The world is full of stories worth slowing down for.
+            Meet the people, places, and experiences that change
+            how we see one another.
           </p>
-          <p><strong>StoryCast Editorial</strong> · 8-minute read</p>
+          <div class="hero__actions">
+            <a class="button" href="story/index.html">Discover a story <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#featured">Start exploring</a>
+          </div>
+          <p class="hero__note">Thoughtfully told. Made to be experienced by everyone.</p>
         </div>
-      </header>
 
-      <section class="section section--white" aria-labelledby="listen-heading">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Listen to the story</p>
-            <h2 id="listen-heading">Hear it in their own words.</h2>
-            <p>
-              Listen to the audio below, or continue with the written
-              transcript. The audio file is a placeholder until you add
-              your own recording.
-            </p>
+        <div class="hero-art" role="img" aria-label="Abstract illustration of a setting sun over layered coastal waves">
+          <div class="hero-art__sun"></div>
+          <div class="hero-art__label">STORIES THAT STAY WITH US</div>
+          <div class="hero-art__wave hero-art__wave--back"></div>
+          <div class="hero-art__wave hero-art__wave--middle"></div>
+          <div class="hero-art__wave hero-art__wave--front"></div>
+          <span class="hero-art__index">01 / LISTEN CLOSELY</span>
+        </div>
+      </div>
+      <div class="hero__bottom">
+        <div class="container hero__bottom-inner">
+          <span>REAL PEOPLE</span>
+          <span aria-hidden="true">✳</span>
+          <span>MEANINGFUL PERSPECTIVES</span>
+          <span aria-hidden="true">✳</span>
+          <span>ACCESSIBLE STORYTELLING</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured-section" id="featured" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-topline">
+          <div>
+            <p class="eyebrow">The story selection · 001</p>
+            <h2 id="featured-heading">Some stories ask us to listen.</h2>
+          </div>
+          <span class="section-index">FEATURED STORY</span>
+        </div>
+
+        <article class="featured-card">
+          <div class="featured-card__art" role="img" aria-label="Abstract illustration of a coastal horizon at sunset">
+            <span class="featured-card__art-label">FIELD NOTES<br>NO. 001</span>
+            <div class="featured-card__sun"></div>
+            <div class="featured-card__coast"></div>
+            <div class="featured-card__water"></div>
           </div>
 
-          <div class="card">
-            <div class="card__content">
-              <h3>Audio story</h3>
-              <audio controls preload="metadata">
-                <source src="../assets/audio/keepers-of-the-tide.mp3" type="audio/mpeg">
-                Your browser does not support the audio player.
-                You can read the transcript below instead.
-              </audio>
-              <p>
-                <a href="#transcript">Skip to the full transcript</a>
-              </p>
+          <div class="featured-card__content">
+            <p class="eyebrow">People &amp; place · Audio feature</p>
+            <h3>The Keepers of the Tide</h3>
+            <p class="featured-card__summary">
+              Along the coast, the sea is more than a horizon.
+              It is a livelihood, a memory, and a way of understanding time.
+            </p>
+            <div class="story-meta">
+              <span>Reading time: about 4 minutes</span>
+              <span>Audio: to be added</span>
+            </div>
+            <a class="button" href="story/index.html">Read the story <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <p class="prototype-note">
+          This featured story is a prototype. Replace demonstration copy
+          with verified reporting before publication.
+        </p>
+      </div>
+    </section>
+
+    <section class="section values-section" aria-labelledby="values-heading">
+      <div class="container values-layout">
+        <div>
+          <p class="eyebrow">Our point of view</p>
+          <h2 id="values-heading">A little more listening. A little more understanding.</h2>
+        </div>
+        <div class="values-copy">
+          <p>
+            We believe a good story does more than inform. It creates
+            room for another perspective, invites curiosity, and helps
+            us notice what we might otherwise miss.
+          </p>
+          <a class="text-link" href="about.html">Get to know StoryCast <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section access-section" aria-labelledby="access-heading">
+      <div class="container access-panel">
+        <div class="access-panel__intro">
+          <p class="eyebrow">Access is part of the story</p>
+          <h2 id="access-heading">Stories should meet people where they are.</h2>
+          <p>
+            Listen, read, navigate by keyboard, and explore at your own pace.
+            We are building a more inclusive storytelling experience.
+          </p>
+          <a class="button button--light" href="about.html">Our access commitments <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="access-list">
+          <div class="access-item">
+            <span class="access-item__number">01</span>
+            <div>
+              <h3>Read along</h3>
+              <p>Written alternatives for audio stories.</p>
+            </div>
+          </div>
+          <div class="access-item">
+            <span class="access-item__number">02</span>
+            <div>
+              <h3>Navigate freely</h3>
+              <p>Keyboard support and visible focus states.</p>
+            </div>
+          </div>
+          <div class="access-item">
+            <span class="access-item__number">03</span>
+            <div>
+              <h3>Find your rhythm</h3>
+              <p>A responsive layout and reduced-motion support.</p>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="section" aria-labelledby="story-heading">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">The story</p>
-            <h2 id="story-heading">A life shaped by the water</h2>
-          </div>
-
-          <p>
-            At first light, the shoreline begins to stir. Boats move
-            across the water while familiar routines unfold on the sand.
-            For generations, people here have learned to read the sea:
-            its changing colors, its quiet warnings, and the seasons
-            that determine what it gives.
-          </p>
-
-          <p>
-            But a coastline is never still. The water changes, the
-            weather shifts, and the work that once sustained a family
-            can become harder to predict. What remains is the knowledge
-            people carry with them and the stories they share.
-          </p>
-
-          <p>
-            The keepers of the tide understand that the sea is not
-            simply a place to work. It is part of a community's memory,
-            connecting the people who came before with those who will
-            follow.
-          </p>
-
-          <p>
-            These paragraphs are original demonstration copy for the
-            prototype. Replace them with researched, verified reporting
-            and the real interviewee's words before presenting the site
-            as a factual publication.
-          </p>
-        </div>
-      </section>
-
-      <section class="section section--white" id="transcript" aria-labelledby="transcript-heading">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Accessible alternative</p>
-            <h2 id="transcript-heading">Full audio transcript</h2>
-            <p>
-              Read the story without audio. A complete transcript should
-              include all spoken words and identify speakers where needed.
-            </p>
-          </div>
-
-          <div class="transcript">
-            <p><strong>Narrator:</strong> At first light, the shoreline begins to stir.</p>
-            <p><strong>Narrator:</strong> For generations, people here have learned to read the sea and its changing seasons.</p>
-            <p><strong>Narrator:</strong> The coastline changes, but the knowledge people carry and the stories they share remain important.</p>
-            <p>
-              <em>
-                Demonstration transcript: replace this text with the
-                complete, verified transcript of your final audio recording.
-              </em>
-            </p>
-          </div>
-        </div>
-      </section>
-    </article>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <a class="logo" href="../index.html">StoryCast.</a>
-      <p>Human stories, thoughtfully told.</p>
-      <a href="../about.html">About &amp; Access</a>
+    <div class="container footer-inner">
+      <div>
+        <a class="logo" href="index.html">StoryCast<span aria-hidden="true">.</span></a>
+        <p>Human stories, thoughtfully told.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="story/index.html">Stories</a>
+        <a href="about.html">About &amp; Access</a>
+      </div>
+      <p class="footer-credit">An editorial microsite concept.</p>
     </div>
   </footer>
 </body>
