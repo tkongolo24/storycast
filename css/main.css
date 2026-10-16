@@ -255,6 +255,23 @@ button {
     gap: 1rem 1.25rem;
   }
 }
+audio {
+  display: block;
+  width: 100%;
+  margin-block: 1rem;
+}
+
+.transcript {
+  max-width: 760px;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  border-left: 3px solid #b84f32;
+  background: #ffffff;
+}
+
+.transcript p {
+  margin-bottom: 1.5rem;
+}
+
 .skip-link {
   position: absolute;
   top: 0.5rem;
