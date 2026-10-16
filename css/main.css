@@ -87,4 +87,56 @@ button {
   color: #ffffff;
 }
 
+.container {
+  width: min(100% - 2 * clamp(1.25rem, 5vw, 4rem), 1200px);
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: clamp(3.5rem, 8vw, 7rem);
+}
+
+.section--cream {
+  background: #f7f1e7;
+}
+
+.section--white {
+  background: #ffffff;
+}
+
+.section--navy {
+  background: #18243a;
+  color: #ffffff;
+}
+
+.section-heading {
+  max-width: 720px;
+  margin-bottom: 3rem;
+}
+
+.section-heading p {
+  max-width: 580px;
+  color: #5d6470;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 760px) {
+  .grid--two,
+  .grid--three {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
