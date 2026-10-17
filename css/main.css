@@ -514,8 +514,6 @@ audio {
   grid-template-columns: 1fr 1fr;
   border: 1px solid #d9d0c3;
   background: #f7f1e7;
-  container-type: inline-size;
-  container-name: featured;
 }
 
 .featured-card__art {
