@@ -359,6 +359,10 @@ audio {
   font-size: 0.7rem;
   letter-spacing: 0.1em;
 }
+.featured-card-wrapper {
+  container-type: inline-size;
+  container-name: featured;
+}
 
 .featured-card {
   display: grid;

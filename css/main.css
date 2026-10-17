@@ -504,6 +504,11 @@ audio {
   letter-spacing: 0.1em;
 }
 
+.featured-card-wrapper {
+  container-type: inline-size;
+  container-name: featured;
+}
+
 .featured-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
