@@ -106,11 +106,19 @@ storycast/
 
 6. Open `index.html` in a browser, or use a local development server.
 
-## Accessibility
+## Accessibility Checklist
 
-The project incorporates accessibility-oriented practices, including semantic HTML, a skip link, visible keyboard focus styles, responsive layouts, and a transcript for the audio narration.
-
-These features should be tested with keyboard navigation, responsive browser sizes, and color-contrast checks before making accessibility compliance claims.
+- [x] Semantic HTML5 structure: `header`, `nav`, `main`, `section`
+- [x] `lang="en"` set on every page
+- [x] One `h1` per page with a logical heading order
+- [x] "Skip to main content" link on every page
+- [x] Visible keyboard focus using `:focus-visible`
+- [x] Labelled navigation (`aria-label`) with `aria-current="page"` on the active link
+- [x] Audio player has an accessible name (`aria-label`) and a full text transcript
+- [x] Decorative graphics hidden with `aria-hidden="true"`; the main illustration has an `aria-label`
+- [x] `prefers-reduced-motion` respected
+- [x] Text colors meet WCAG AA contrast (4.5:1 or higher)
+- [x] Responsive layout, with a container query on the featured card
 
 ## Research and Design
 

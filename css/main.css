@@ -90,7 +90,7 @@ button {
 }
 
 ::selection {
-  background: #b84f32;
+  background: #a3412a;
   color: #ffffff;
 }
 
@@ -195,7 +195,7 @@ button {
 
 .nav-links a:hover,
 .nav-links a[aria-current=page] {
-  color: #b84f32;
+  color: #a3412a;
 }
 
 .button {
@@ -206,7 +206,7 @@ button {
   padding: 0.75rem 1.25rem;
   border: 2px solid transparent;
   border-radius: 3px;
-  background: #b84f32;
+  background: #a3412a;
   color: #ffffff;
   font-weight: 700;
   text-decoration: none;
@@ -246,7 +246,7 @@ button {
 }
 
 .eyebrow {
-  color: #b84f32;
+  color: #a3412a;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -316,7 +316,7 @@ audio {
 .feature-number {
   display: inline-block;
   margin-bottom: 1.5rem;
-  color: #b84f32;
+  color: #a3412a;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -677,49 +677,43 @@ audio {
     border: 2px solid #18243a;
     font-weight: 700;
   }
-}
-.skip-link {
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  z-index: 100;
-  padding: 0.75rem 1rem;
-  transform: translateY(-200%);
-  background: #ffffff;
-  color: #18243a;
-  border: 2px solid #18243a;
-  font-weight: 700;
-}
-
-.skip-link:focus {
-  transform: translateY(0);
-}
-
-:focus-visible {
-  outline: 3px solid #b84f32;
-  outline-offset: 4px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+  .skip-link:focus {
+    transform: translateY(0);
+  }
+  :focus-visible {
+    outline: 3px solid #a3412a;
+    outline-offset: 4px;
+  }
+  .section--navy :focus-visible,
+  .site-footer :focus-visible,
+  .access-panel :focus-visible {
+    outline-color: #f7f1e7;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      scroll-behavior: auto !important;
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    .section--navy :focus-visible,
+    .site-footer :focus-visible,
+    .access-panel :focus-visible {
+      outline-color: #f7f1e7;
+    }
   }
 }
 
