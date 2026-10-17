@@ -1,34 +1,45 @@
-# StoryCast: Every Voice Carries a Story
+# StoryCast
 
-## Project Overview
+**An editorial media experience exploring stories, communities, and the people connected to the coast.**
 
-StoryCast is an editorial media microsite concept designed to share thoughtful human stories through accessible storytelling. The website presents stories about people, places, and experiences in an engaging and reader-friendly format.
+StoryCast is a responsive, three-page editorial microsite designed to present a feature story through visual design, accessible content, and audio narration.
 
-The project focuses on editorial design, responsive layouts, semantic HTML, modular Sass styling, and accessibility.
+## Live Website
 
-## Website Pages
+- **Homepage:** https://tkongolo24.github.io/storycast/
+- **Feature Story:** https://tkongolo24.github.io/storycast/story/
+- **About & Accessibility:** https://tkongolo24.github.io/storycast/about.html
 
-### 1. Home Page
-**File:** `index.html`
+## Project Pages
 
-The homepage introduces StoryCast, presents its editorial vision, highlights the featured story *The Keepers of the Tide*, and directs visitors to the full story and accessibility information.
+### Home
+Introduces StoryCast, highlights the featured story, and presents the project's editorial values.
 
-### 2. Story Page
-**File:** `story/index.html`
+### Feature Story — The Keepers of the Tide
+Presents the featured editorial story with an audio narration player and a text transcript.
 
-The story page contains the full article *The Keepers of the Tide*, story information, an audio-player placeholder, and a written transcript to support visitors who cannot or prefer not to listen to audio.
+### About & Accessibility
+Provides information about the project and its accessibility approach.
 
-### 3. About & Access Page
-**File:** `about.html`
+## Features
 
-This page explains the purpose of StoryCast and describes its approach to accessible and inclusive storytelling.
+- Responsive layouts for different screen sizes.
+- Semantic HTML structure.
+- Sass stylesheets organized into partials.
+- CSS Grid and Flexbox layouts.
+- CSS container queries for component responsiveness.
+- Keyboard focus styling and a skip-to-main-content link.
+- Audio narration with a text transcript.
+- A visual design system using a consistent color palette and typography.
 
-## Technologies Used
+## Technologies
 
-- HTML5 for semantic page structure.
-- Sass (SCSS) for modular and maintainable styling.
-- CSS for layout, visual presentation, and responsive design.
-- JavaScript is not currently required for the core page navigation.
+- HTML5
+- Sass (SCSS)
+- CSS Grid
+- Flexbox
+- CSS container queries
+- Git and GitHub Pages
 
 ## Project Structure
 
@@ -36,13 +47,11 @@ This page explains the purpose of StoryCast and describes its approach to access
 storycast/
 ├── index.html
 ├── about.html
-├── README.md
-├── package.json
 ├── story/
 │   └── index.html
 ├── sass/
 │   ├── main.scss
-│   ├── _colours.scss
+│   ├── _colors.scss
 │   ├── _typography.scss
 │   ├── _spacing.scss
 │   ├── _reset.scss
@@ -61,79 +70,64 @@ storycast/
     └── StoryCast-Research-and-Design.pdf
 ```
 
-## Design Approach
+*The structure above describes the expected organization. Adjust it if any filenames or folders differ in the repository.*
 
-StoryCast uses an editorial visual identity intended to feel calm, welcoming, and readable.
+## Running Locally
 
-### Colour Palette
-
-- Navy: `#18243A`
-- Cream: `#F7F1E7`
-- Terracotta: `#B84F32`
-- Charcoal: `#20242B`
-- Slate: `#5D6470`
-- Warm border: `#D9D0C3`
-
-### Typography
-
-The intended typography combines DM Serif Display for expressive headlines with DM Sans for body text and interface elements.
-
-### Visual Style
-
-The design uses generous spacing, clear content hierarchy, coastal-inspired illustrations, and consistent navigation across the three pages.
-
-## Accessibility Features
-
-The project incorporates the following accessibility considerations:
-
-- Semantic HTML landmarks, including `header`, `nav`, `main`, `article`, and `footer`.
-- A skip link that allows keyboard users to jump to the main content.
-- Descriptive page titles and metadata.
-- Consistent navigation between pages.
-- An active-page indicator using `aria-current`.
-- Text alternatives for meaningful illustrations.
-- Native audio controls and a written transcript section.
-- Responsive layout and keyboard-focus styling.
-- Reduced-motion support where specified in the stylesheet.
-
-## Running the Project Locally
-
-1. Install Node.js.
-2. Open the project folder in Visual Studio Code.
-3. Install dependencies if needed:
+1. Clone the repository:
 
    ```bash
-   npm install
+   git clone https://github.com/tkongolo24/storycast.git
    ```
 
-4. Start the Sass compiler:
+2. Enter the project directory:
 
    ```bash
-   npm run sass
+   cd storycast
    ```
 
-5. Use the Live Server extension in Visual Studio Code to open `index.html` in a browser.
+3. Install Sass if it is not already installed:
 
-The Sass watcher compiles `sass/main.scss` into `css/main.css`. Keep the watcher running while editing Sass files so that changes are compiled automatically.
+   ```bash
+   npm install --global sass
+   ```
 
-## Content and Prototype Limitations
+4. Compile the Sass stylesheet:
 
-The featured story, *The Keepers of the Tide*, currently uses demonstration copy. It should be replaced with researched material and credible sources before being presented as verified reporting.
+   ```bash
+   sass sass/main.scss css/main.css
+   ```
 
-The audio player is a placeholder until an audio recording is added.
+5. To automatically compile changes while editing:
 
-## Testing Checklist
+   ```bash
+   sass --watch sass/main.scss:css/main.css
+   ```
 
-Before submission, verify that:
+6. Open `index.html` in a browser, or use a local development server.
 
-- All three pages load correctly.
-- Navigation links lead to the correct pages.
-- The website works at desktop and mobile widths.
-- Keyboard navigation and visible focus states work.
-- Sass compiles without errors.
-- The transcript is available on the story page.
-- The deployed website works through its public URL.
+## Accessibility
 
-## Project Status
+The project incorporates accessibility-oriented practices, including semantic HTML, a skip link, visible keyboard focus styles, responsive layouts, and a transcript for the audio narration.
 
-StoryCast is a course-project prototype demonstrating editorial website design, structured HTML, modular Sass, and accessibility-focused content presentation.
+These features should be tested with keyboard navigation, responsive browser sizes, and color-contrast checks before making accessibility compliance claims.
+
+## Research and Design
+
+The project is supported by research and design materials prepared during development.
+
+See the research and design PDF in the `docs/` directory and the associated design mockups and wireframes.
+
+## Deployment
+
+The website is published using GitHub Pages from the `main` branch.
+
+Repository: https://github.com/tkongolo24/storycast
+
+## Content Note
+
+“The Keepers of the Tide” is demonstration editorial content created for this project. It should not be interpreted as verified journalism or a report of independently confirmed events.
+
+## License
+
+This project was created for an academic assignment. No open-source license is specified unless one is added to the repository.
