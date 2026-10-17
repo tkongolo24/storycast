@@ -1,4 +1,4 @@
-# StoryCast — Every Voice Carries a Story
+# StoryCast: Every Voice Carries a Story
 
 ## Project Overview
 
@@ -42,7 +42,7 @@ storycast/
 │   └── index.html
 ├── sass/
 │   ├── main.scss
-│   ├── _colors.scss
+│   ├── _colours.scss
 │   ├── _typography.scss
 │   ├── _spacing.scss
 │   ├── _reset.scss
