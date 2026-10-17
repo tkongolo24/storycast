@@ -1,5 +1,19 @@
 @use 'colors' as c;
 
+@layer accessibility {
+  .skip-link {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 100;
+    padding: 0.75rem 1rem;
+    transform: translateY(-200%);
+    background: c.$white;
+    color: c.$navy;
+    border: 2px solid c.$navy;
+    font-weight: 700;
+  }
+}
 .skip-link {
   position: absolute;
   top: 0.5rem;

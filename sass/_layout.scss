@@ -1,6 +1,13 @@
 @use 'colors' as c;
 @use 'spacing' as s;
 
+@layer layout {
+  .container {
+    width: min(100% - 2 * s.$container-padding, s.$container-width);
+    margin-inline: auto;
+  }
+}
+
 .container {
   width: min(100% - 2 * s.$container-padding, s.$container-width);
   margin-inline: auto;

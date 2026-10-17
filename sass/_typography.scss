@@ -3,6 +3,12 @@
 $font-heading: 'DM Serif Display', Georgia, serif;
 $font-body: 'DM Sans', Arial, sans-serif;
 
+@layer base {
+  html {
+    font-size: 16px;
+}
+}
+
 html {
   font-size: 16px;
 }

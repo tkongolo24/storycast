@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap");
 @layer reset, base, layout, components, accessibility;
+@layer base {
+  html {
+    font-size: 16px;
+  }
+}
 html {
   font-size: 16px;
 }
@@ -40,12 +45,13 @@ a {
   text-underline-offset: 0.2em;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 }
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
@@ -88,6 +94,12 @@ button {
   color: #ffffff;
 }
 
+@layer layout {
+  .container {
+    width: min(100% - 2 * clamp(1.25rem, 5vw, 4rem), 1200px);
+    margin-inline: auto;
+  }
+}
 .container {
   width: min(100% - 2 * clamp(1.25rem, 5vw, 4rem), 1200px);
   margin-inline: auto;
@@ -137,6 +149,14 @@ button {
   .grid--two,
   .grid--three {
     grid-template-columns: 1fr;
+  }
+}
+@layer components {
+  .site-header {
+    position: relative;
+    z-index: 10;
+    background: #f7f1e7;
+    border-bottom: 1px solid #d9d0c3;
   }
 }
 .site-header {
@@ -644,6 +664,20 @@ audio {
   color: #18243a;
 }
 
+@layer accessibility {
+  .skip-link {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 100;
+    padding: 0.75rem 1rem;
+    transform: translateY(-200%);
+    background: #ffffff;
+    color: #18243a;
+    border: 2px solid #18243a;
+    font-weight: 700;
+  }
+}
 .skip-link {
   position: absolute;
   top: 0.5rem;
