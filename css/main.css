@@ -272,6 +272,7 @@ audio {
   margin-bottom: 1.5rem;
 }
 
+/* About page */
 .page-intro {
   max-width: 720px;
   font-size: clamp(1.1rem, 2vw, 1.35rem);
@@ -629,134 +630,6 @@ audio {
   color: #18243a;
 }
 
-.button--light:hover {
-  background: #d9855f;
-  color: #18243a;
-}
-
-.access-list {
-  align-self: center;
-}
-
-.access-item {
-  display: grid;
-  grid-template-columns: 2.5rem 1fr;
-  gap: 1rem;
-  padding-block: 1.5rem;
-  border-bottom: 1px solid #465064;
-}
-
-.access-item:first-child {
-  border-top: 1px solid #465064;
-}
-
-.access-item__number {
-  color: #f0ad91;
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
-.access-item h3 {
-  margin: 0 0 0.4rem;
-  font-family: "DM Sans", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0;
-}
-
-.access-item p {
-  margin: 0;
-  color: #d8dce3;
-  font-size: 0.9rem;
-}
-
-.footer-inner {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 1rem 2rem;
-  align-items: start;
-}
-
-.footer-inner > div:first-child p {
-  color: #d8dce3;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 1.5rem;
-}
-
-.footer-credit {
-  grid-column: 1/-1;
-  margin-top: 1rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #465064;
-  color: #d8dce3;
-  font-size: 0.8rem;
-}
-
-@media (max-width: 850px) {
-  .hero__inner,
-  .values-layout,
-  .access-panel {
-    grid-template-columns: 1fr;
-  }
-  .hero__inner {
-    gap: 3rem;
-  }
-  .hero-art {
-    min-height: 360px;
-  }
-  .featured-card {
-    grid-template-columns: 1fr;
-  }
-  .featured-card__art {
-    min-height: 320px;
-  }
-  .values-copy {
-    padding-top: 0;
-  }
-  .access-panel {
-    gap: 2rem;
-  }
-}
-@media (max-width: 560px) {
-  .hero__inner {
-    padding-block: 3.5rem;
-  }
-  .hero-art {
-    min-height: 290px;
-  }
-  .hero__bottom-inner {
-    justify-content: flex-start;
-  }
-  .hero__bottom-inner span:nth-child(even) {
-    display: none;
-  }
-  .section-topline {
-    display: block;
-  }
-  .section-index {
-    display: inline-block;
-    margin-top: 1rem;
-  }
-  .featured-card__art {
-    min-height: 270px;
-  }
-  .featured-card__content {
-    padding: 1.5rem;
-  }
-  .access-panel {
-    padding: 1.5rem;
-  }
-  .footer-inner {
-    grid-template-columns: 1fr;
-  }
-  .footer-credit {
-    grid-column: auto;
-  }
-}
 .skip-link {
   position: absolute;
   top: 0.5rem;
