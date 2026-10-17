@@ -51,6 +51,7 @@ storycast/
 │   └── index.html
 ├── sass/
 │   ├── main.scss
+│   ├── _layers.scss
 │   ├── _colors.scss
 │   ├── _typography.scss
 │   ├── _spacing.scss
@@ -61,11 +62,8 @@ storycast/
 ├── css/
 │   └── main.css
 ├── assets/
-│   ├── images/
-│   ├── audio/
-│   ├── video/
-│   ├── captions/
-│   └── transcripts/
+│   └── audio/
+│       └── ttsmaker-file-2026-10-17-15-6-0.mp3
 └── docs/
     └── StoryCast-Research-and-Design.pdf
 ```
@@ -136,6 +134,4 @@ Repository: https://github.com/tkongolo24/storycast
 
 “The Keepers of the Tide” is demonstration editorial content created for this project. It should not be interpreted as verified journalism or a report of independently confirmed events.
 
-## License
-
-This project was created for an academic assignment. No open-source license is specified unless one is added to the repository.
+- Wireframes and high-fidelity mockups (Figma): https://www.figma.com/design/mOHz5YMXqNtdl8sVBja4tY/StoryCast_Explore-frame-to-StoryCast_About---Access?node-id=0-1&t=vSwKvVOj5DT2aihc-1
