@@ -488,6 +488,8 @@ audio {
   grid-template-columns: 1fr 1fr;
   border: 1px solid #d9d0c3;
   background: #f7f1e7;
+  container-type: inline-size;
+  container-name: featured;
 }
 
 .featured-card__art {
@@ -556,6 +558,17 @@ audio {
   color: #5d6470;
 }
 
+@container featured (max-width: 600px) {
+  .featured-card {
+    grid-template-columns: 1fr;
+  }
+  .featured-card__art {
+    min-height: 280px;
+  }
+  .featured-card__content {
+    padding: 1.5rem;
+  }
+}
 .story-meta {
   display: flex;
   flex-wrap: wrap;

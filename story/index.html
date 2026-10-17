@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,11 +39,11 @@
       </header>
 
       <div class="story-art container" role="img" aria-label="Abstract illustration of a setting sun above layered coastal waves">
-        <div class="story-art__sun"></div>
-        <div class="story-art__wave story-art__wave--back"></div>
-        <div class="story-art__wave story-art__wave--middle"></div>
-        <div class="story-art__wave story-art__wave--front"></div>
-        <span class="story-art__label">FIELD NOTES · NO. 001</span>
+        <div class="story-art__sun" aria-hidden="true"></div>
+        <div class="story-art__wave story-art__wave--back" aria-hidden="true"></div>
+        <div class="story-art__wave story-art__wave--middle" aria-hidden="true"></div>
+        <div class="story-art__wave story-art__wave--front" aria-hidden="true"></div>
+        <span class="story-art__label" aria-hidden="true">FIELD NOTES · NO. 001</span>
       </div>
 
       <div class="story-body container">
@@ -111,37 +112,54 @@
           <p class="eyebrow">Listen to the feature</p>
           <h2 id="audio-heading">Hear the story</h2>
           <p>
-            Audio will be added to this prototype. When a recording is ready,
-            use the player below and keep the written transcript available.
+            Listen to the audio version of The Keepers of the Tide.
+            A written transcript is available below.
           </p>
 
-          <audio controls preload="none" aria-label="Audio version of The Keepers of the Tide">
-            Your browser does not support the audio player. Please use the written story and transcript below.
+          <audio controls preload="metadata"
+                 aria-label="Audio narration of The Keepers of the Tide">
+            <source
+              src="../assets/audio/ttsmaker-file-2026-10-17-15-6-0.mp3"
+              type="audio/mpeg">
+            Your browser does not support audio playback.
+            Please read the transcript below.
           </audio>
 
           <details class="transcript" id="transcript">
             <summary>Read the audio transcript</summary>
             <div class="transcript__content">
               <p>
-                Before the day becomes loud, the coast is already awake. The
-                tide moves in its own time, carrying the sounds of water,
-                boats, and people beginning their work.
+                Before the day begins, the coast is already awake.
               </p>
+
               <p>
-                For families who live beside the sea, the shoreline is a place
-                of work and learning, a source of food, and a record of changes
-                felt from one season to the next.
+                For families who live beside the sea, the shoreline is more
+                than a beautiful view. It is a source of food, work, and
+                knowledge passed from one generation to the next.
               </p>
+
               <p>
-                Experience teaches people to notice the wind, the colour of
-                the water, and the shape of waves near the shore. This knowledge
-                is shared through conversation and practice.
+                People learn to read the water by watching the wind, the
+                waves, and the changing seasons.
               </p>
+
               <p>
-                Coastal communities face uncertainty from changing weather,
-                fishing conditions, and pressure on marine environments.
-                Listening to local knowledge and protecting marine ecosystems
-                can help coastal communities thrive.
+                But coastal communities face challenges, from changing weather
+                to pressure on marine environments.
+              </p>
+
+              <p>
+                Protecting the shoreline means listening to the people who
+                know it best and caring for the ecosystems that sustain them.
+              </p>
+
+              <p>
+                The tide will keep moving. Our challenge is to make sure these
+                communities can continue to thrive.
+              </p>
+
+              <p>
+                This is The Keepers of the Tide, a StoryCast feature.
               </p>
             </div>
           </details>
